@@ -1,0 +1,92 @@
+.add-transaction-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.transaction-box input {
+  width: 100%;
+}
+
+.transaction-type {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.transaction-type input {
+  width: auto;
+}
+
+.transaction-type label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.transaction-type label:hover {
+  color: #007bff;
+}
+
+textarea {
+  width: 100% !important;
+  resize: vertical;
+  min-height: 80px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+
+button {
+  width: 100%;
+  background: #28a745;
+  color: white;
+  padding: 16px 20px;         
+  font-size: 16px;            
+  line-height: 1.4;           
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background: #218838;
+  transform: scale(1.02);
+}

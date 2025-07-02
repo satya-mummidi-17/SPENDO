@@ -1,0 +1,119 @@
+.dashboard {
+  padding: 2rem;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.balance-card {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.income-card,
+.expense-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.income-card:hover,
+.expense-card:hover {
+  transform: scale(1.02);
+}
+
+.income-card {
+  border-left: 5px solid #28a745;
+}
+
+.expense-card {
+  border-left: 5px solid #dc3545;
+}
+
+.add-transaction {
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 42px;
+  width: 200px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-transaction:hover {
+  background: #0056b3;
+  transform: scale(1.03);
+}
+
+.dashboard-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.transactions-chart-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.transactions,
+.expense-chart {
+  flex: 1;
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.transactions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transactions li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #444;
+}
+
+.transactions li:last-child {
+  border-bottom: none;
+}
+
+.chart-container {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-container canvas {
+  width: 90% !important;
+  height: 100% !important;
+}
