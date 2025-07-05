@@ -23,6 +23,7 @@ const navigate=useNavigate();
     function handleReset(){
         localStorage.clear();
         navigate("/");
+          window.location.reload();
     }
 
 
